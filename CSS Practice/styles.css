@@ -1,0 +1,10 @@
+
+.nav {
+    color: #000;
+  }
+  
+
+  .nav:target {
+    color: #00f;
+  }
+  
