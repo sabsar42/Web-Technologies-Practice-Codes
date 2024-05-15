@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .sidebar {
+        height: 100%;
+        width: 200px;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        float: right;
+        background-color: #333;
+        padding-top: 20px;
+      }
+
+      .sidebar a {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+
+      .sidebar a:hover {
+        background-color: #555;
+      }
+
+      .content {
+        margin-left: 220px;
+        padding: 20px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: white">
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="login_page.html" , target="_blank">Login</a>
+          <a href="registration_page.html" , target="_blank">Registration</a>
+          <a href="rahin_house.html" , target="_blank">Rahin's house</a>
+          <a href="saymon_house.html" , target="_blank">Saymon's Home</a>
+          <a href="shakib_temple.html" , target="_blank">Shakib's Temple</a>
+          <a href="absar_temple.html" , target="_blank">Absar's Temple</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Welcome to our Restaurant</h3>
+    <p>We will make you a Food !!</p>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6-plsV7mIsCXRQXNa0DU7tV_kd8dgEGCvaITeuDLag&s"
+        alt=""
+      />
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Absar's Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <li><a href="login_page.html" , target="_blank">Login</a></li>
+          <li>
+            <a href="registration_page.html" , target="_blank">Registration</a>
+          </li>
+          <li>
+            <a href="rahin_house.html" , target="_blank">Rahin's house</a>
+          </li>
+          <li>
+            <a href="saymon_house.html" , target="_blank">Saymon's Home</a>
+          </li>
+          <li>
+            <a href="shakib_temple.html" , target="_blank">Shakib's Temple</a>
+          </li>
+          <li>
+            <a href="absar_temple.html" , target="_blank">Absar's Temple</a>
+          </li>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+      </div>
+      <div class="footer-rights">
+        www.RamenQlub.io | All Rights Reserved 2024
+      </div>
+    </footer>
+  </body>
+</html>

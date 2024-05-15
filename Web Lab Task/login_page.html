@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration/Login Page</title>
+  </head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script>
+      function validateForm() {
+        var phoneInput = document.getElementById("phone");
+        var emailInput = document.getElementById("email");
+        var nameInput = document.getElementById("name");
+        var passwordInput = document.getElementById("password");
+
+        var phonePattern = /^01[3-9][0-9]{8}$/;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var namePattern = /^[a-z A-Z]+$/;
+        var passwordPattern =
+          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$&*~]).{6,}$/;
+
+        if (!phoneInput.value.match(phonePattern)) {
+          alert("Please enter a valid phone number");
+          return false;
+        }
+
+        if (!emailInput.value.match(emailPattern)) {
+          alert("Please enter a valid email address");
+          return false;
+        }
+
+        if (!nameInput.value.match(namePattern)) {
+          alert("Please enter a valid name (only alphabetical characters)");
+          return false;
+        }
+
+        if (!passwordInput.value.match(passwordPattern)) {
+          alert(
+            "Please enter a valid password (at least 8 characters with one digit, one lowercase, and one uppercase letter)"
+          );
+          return false;
+        }
+
+        return alert("Form submitted successfully!");
+      }
+    </script>
+  </head>
+  <h1>Login</h1>
+  <body>
+    <form action="#" method="post" onsubmit="return validateForm()">
+    
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+      <br />
+    
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br>
+      <button><a href="registration_page.html">Registration</a></button>
+      <br>
+
+      <button><a href="navigation_dropdown.html">Navigation</a></button>
+    
+  </body>
+</html>
